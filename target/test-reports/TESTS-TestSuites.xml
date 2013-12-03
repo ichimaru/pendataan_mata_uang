@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="TeravinPC" id="0" name="GroupsControllerTests" package="user_module" tests="4" time="1.241" timestamp="2013-10-03T07:15:35">
+      <properties />
+
+      <testcase classname="user_module.GroupsControllerTests" name="testSave" time="0.924" />
+
+      <testcase classname="user_module.GroupsControllerTests" name="testDelete" time="0.153" />
+
+      <testcase classname="user_module.GroupsControllerTests" name="testShow" time="0.078" />
+
+      <testcase classname="user_module.GroupsControllerTests" name="testEditGroup" time="0.069" />
+
+      <system-out><![CDATA[--Output from testSave--
+masuk blok try!
+code berubah2nya : Q15DU7T4M
+Hibernate: select this_.id as id1_0_, this_.version as version1_0_, this_.password as password1_0_, this_.username as username1_0_ from user this_ where lower(this_.username) like ?
+Hibernate: insert into user (version, password, username) values (?, ?, ?)
+Hibernate: insert into user_details (version, email, first_name, last_name, mobile_phone_no, user_id, user_alias) values (?, ?, ?, ?, ?, ?, ?)
+user & detailsnya valid
+user Instance : b01
+user Instance : Q15DU7T4M
+user detail instance : budi
+user detail instance : john
+user detail instance : bujon
+user detail instance : bujon@gmail.com
+user detail instance : 12345678
+user detail instance : b01
+masuk blok try!
+code berubah2nya : KZGBFG4VB
+Hibernate: select this_.id as id1_0_, this_.version as version1_0_, this_.password as password1_0_, this_.username as username1_0_ from user this_ where lower(this_.username) like ?
+Hibernate: insert into user (version, password, username) values (?, ?, ?)
+Hibernate: insert into user_details (version, email, first_name, last_name, mobile_phone_no, user_id, user_alias) values (?, ?, ?, ?, ?, ?, ?)
+user & detailsnya valid
+user Instance : jenong
+user Instance : KZGBFG4VB
+user detail instance : jean
+user detail instance : lenong
+user detail instance : nong
+user detail instance : jenong@gmail.com
+user detail instance : 32123132
+user detail instance : jenong
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_ where this_.user_alias=? limit ?
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_ where this_.user_alias=? limit ?
+lemparan params dari view : [firstName:jean, lastName:lenong, users:jenong, userAlias:nong, email:jenong@gmail.com, mobilePhoneNo:32123132, name:best group, description:only for InTest, user:1]
+params combo : 1
+masuk ke blok try!
+params user semuanya : 1
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where lower(this_.name) like ?
+result groups search : null
+search result groups null, lanjut ke blok else untuk penyimpanan groups & membernya!
+Hibernate: insert into groups (version, description, name) values (?, ?, ?)
+ketangkep
+lemparan params dari view : [firstName:jean, lastName:lenong, users:jenong, userAlias:nong, email:jenong@gmail.com, mobilePhoneNo:32123132, name:groups brother, description:only for InTest 2, user:[budi - john - b01, jean - lenong - jenong]]
+params combo : [budi - john - b01, jean - lenong - jenong]
+masuk ke blok try!
+params user semuanya : [budi - john - b01, jean - lenong - jenong]
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where lower(this_.name) like ?
+result groups search : null
+search result groups null, lanjut ke blok else untuk penyimpanan groups & membernya!
+Hibernate: insert into groups (version, description, name) values (?, ?, ?)
+row 1 : [budi - john - b01, jean - lenong - jenong]
+a : 2
+g : budi - john - b01
+g na gk null!
+ketangkep
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_
+--Output from testDelete--
+masuk blok try!
+code berubah2nya : 9QDKAWD3O
+Hibernate: select this_.id as id1_0_, this_.version as version1_0_, this_.password as password1_0_, this_.username as username1_0_ from user this_ where lower(this_.username) like ?
+Hibernate: insert into user (version, password, username) values (?, ?, ?)
+Hibernate: insert into user_details (version, email, first_name, last_name, mobile_phone_no, user_id, user_alias) values (?, ?, ?, ?, ?, ?, ?)
+user & detailsnya valid
+user Instance : b01
+user Instance : 9QDKAWD3O
+user detail instance : budi
+user detail instance : john
+user detail instance : bujon
+user detail instance : bujon@gmail.com
+user detail instance : 12345678
+user detail instance : b01
+masuk blok try!
+code berubah2nya : OEXTNM4LM
+Hibernate: select this_.id as id1_0_, this_.version as version1_0_, this_.password as password1_0_, this_.username as username1_0_ from user this_ where lower(this_.username) like ?
+Hibernate: insert into user (version, password, username) values (?, ?, ?)
+Hibernate: insert into user_details (version, email, first_name, last_name, mobile_phone_no, user_id, user_alias) values (?, ?, ?, ?, ?, ?, ?)
+user & detailsnya valid
+user Instance : jenong
+user Instance : OEXTNM4LM
+user detail instance : jean
+user detail instance : lenong
+user detail instance : nong
+user detail instance : jenong@gmail.com
+user detail instance : 32123132
+user detail instance : jenong
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_ where this_.user_alias=? limit ?
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_ where this_.user_alias=? limit ?
+lemparan params dari view : [firstName:jean, lastName:lenong, users:jenong, userAlias:nong, email:jenong@gmail.com, mobilePhoneNo:32123132, name:best group, description:only for InTest, user:3]
+params combo : 3
+masuk ke blok try!
+params user semuanya : 3
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where lower(this_.name) like ?
+result groups search : null
+search result groups null, lanjut ke blok else untuk penyimpanan groups & membernya!
+Hibernate: insert into groups (version, description, name) values (?, ?, ?)
+ketangkep
+lemparan params dari view : [firstName:jean, lastName:lenong, users:jenong, userAlias:nong, email:jenong@gmail.com, mobilePhoneNo:32123132, name:groups brother, description:only for InTest 2, user:[budi - john - b01, jean - lenong - jenong]]
+params combo : [budi - john - b01, jean - lenong - jenong]
+masuk ke blok try!
+params user semuanya : [budi - john - b01, jean - lenong - jenong]
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where lower(this_.name) like ?
+result groups search : null
+search result groups null, lanjut ke blok else untuk penyimpanan groups & membernya!
+Hibernate: insert into groups (version, description, name) values (?, ?, ?)
+row 1 : [budi - john - b01, jean - lenong - jenong]
+a : 2
+g : budi - john - b01
+g na gk null!
+ketangkep
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where this_.description=? limit ?
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where this_.description=? limit ?
+groupsInstance id: best group
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.groups_id as groups3_0_0_, this_.user_id as user4_0_0_ from groups_user this_ where this_.groups_id=?
+nilai guIdnya : []
+nilai row : 0
+Hibernate: delete from groups where id=? and version=?
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_
+--Output from testShow--
+masuk blok try!
+code berubah2nya : CFPU26L1L
+Hibernate: select this_.id as id1_0_, this_.version as version1_0_, this_.password as password1_0_, this_.username as username1_0_ from user this_ where lower(this_.username) like ?
+Hibernate: insert into user (version, password, username) values (?, ?, ?)
+Hibernate: insert into user_details (version, email, first_name, last_name, mobile_phone_no, user_id, user_alias) values (?, ?, ?, ?, ?, ?, ?)
+user & detailsnya valid
+user Instance : b01
+user Instance : CFPU26L1L
+user detail instance : budi
+user detail instance : john
+user detail instance : bujon
+user detail instance : bujon@gmail.com
+user detail instance : 12345678
+user detail instance : b01
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_ where this_.user_alias=? limit ?
+lemparan params dari view : [firstName:budi, lastName:john, users:b01, userAlias:bujon, email:bujon@gmail.com, mobilePhoneNo:12345678, name:the groupy, description:only for InTest, user:5]
+params combo : 5
+masuk ke blok try!
+params user semuanya : 5
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where lower(this_.name) like ?
+result groups search : null
+search result groups null, lanjut ke blok else untuk penyimpanan groups & membernya!
+Hibernate: insert into groups (version, description, name) values (?, ?, ?)
+ketangkep
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where this_.description=? limit ?
+groupsInstancethe groupy
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.groups_id as groups3_0_0_, this_.user_id as user4_0_0_ from groups_user this_ where this_.groups_id=?
+groups user[]
+groups user id[]
+a = 0
+nilai C : []
+--Output from testEditGroup--
+masuk blok try!
+code berubah2nya : 0FFQC9Z0F
+Hibernate: select this_.id as id1_0_, this_.version as version1_0_, this_.password as password1_0_, this_.username as username1_0_ from user this_ where lower(this_.username) like ?
+Hibernate: insert into user (version, password, username) values (?, ?, ?)
+Hibernate: insert into user_details (version, email, first_name, last_name, mobile_phone_no, user_id, user_alias) values (?, ?, ?, ?, ?, ?, ?)
+user & detailsnya valid
+user Instance : b01
+user Instance : 0FFQC9Z0F
+user detail instance : budi
+user detail instance : john
+user detail instance : bujon
+user detail instance : bujon@gmail.com
+user detail instance : 12345678
+user detail instance : b01
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_ where this_.user_alias=? limit ?
+lemparan params dari view : [firstName:budi, lastName:john, users:b01, userAlias:bujon, email:bujon@gmail.com, mobilePhoneNo:12345678, name:the groupy, description:only for InTest, user:6]
+params combo : 6
+masuk ke blok try!
+params user semuanya : 6
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.description as descript3_2_0_, this_.name as name2_0_ from groups this_ where lower(this_.name) like ?
+result groups search : null
+search result groups null, lanjut ke blok else untuk penyimpanan groups & membernya!
+Hibernate: insert into groups (version, description, name) values (?, ?, ?)
+ketangkep
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.groups_id as groups3_0_0_, this_.user_id as user4_0_0_ from groups_user this_ where this_.groups_id=?
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.groups_id as groups3_0_0_, this_.user_id as user4_0_0_ from groups_user this_ where this_.groups_id=?
+Hibernate: select this_.id as id3_0_, this_.version as version3_0_, this_.email as email3_0_, this_.first_name as first4_3_0_, this_.last_name as last5_3_0_, this_.mobile_phone_no as mobile6_3_0_, this_.user_id as user7_3_0_, this_.user_alias as user8_3_0_ from user_details this_
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSave--
+--Output from testDelete--
+--Output from testShow--
+--Output from testEditGroup--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
